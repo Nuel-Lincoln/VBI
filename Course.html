@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>VBI</title>
+                    <link rel="shortcut icon" type="image" href="./500px.svg">
+                    <link rel="stylesheet" href="./all.css">
+                    <link rel="stylesheet" href="./Course.css">
+                    <script src="https://kit.fontawesome.com/965dd55c53.js" crossorigin="anonymous"></script>
+                    <script>
+                                        window.addEventListener("load", ()=>{
+                                                            const User = localStorage.getItem("VBLLOGGED");
+
+                                                            if(User == "Admin"){
+
+                                                            }else if(User != null){
+                                                                                document.getElementById("UserImage").src = " ";
+                                                                                document.getElementById("UserImage").alt = User;
+                                                                                document.getElementById("UserName").textContent = User; 
+                                                            }else{
+                                                                                window.location.href = "/VBI/Index.html";
+                                                            }
+                                        })
+                    </script>
+</head>
+<body>
+                    <div class="MainContainer">
+                                        <div class="Header">
+                                                            <div class="HeaderFirst">
+                                                                                <i class="fas fa-book-open" ></i>
+                                                                                <div> ||  </div>
+                                                                                <div>VBI</div>
+                                                                                <div>||</div>
+                                                                                 <div>Virtual Biology Instruction Courses</div>
+                                                                               
+                                                            </div>
+                                                            <div class="HeaderSecond">
+                                                                                <img src="./Tonyy.JPG" alt="" id="UserImage">
+                                                                                <div id="UserName"> Uzoigwe Anthony Uchechukwu </div>
+                                                                                <div class="Btn" id="LogOut">Log Out</div>
+                                                            </div>
+                                                            
+                                        </div>
+                                        <div class="Welcome">
+                                                            Welcome To VBI, Start Your class from the Digestive system and progress accordingly as your instructor directs, I hope you enjoy your learning experience with this platform 
+                                        </div>
+                                        <div class="Error" id="Error">
+
+                                        </div>
+                                        <div class="Courses">
+                                                            <div class="Course" id="Digestive">
+                                                                                <img src="./Dig1.png" alt="Dig">
+                                                                                <span>The Digestive System </span>
+
+                                                            </div>
+                                                            <div class="Course" id="Respiratory">
+                                                                                <img src="./Dig4.png" alt="Resp">
+                                                                                <span>The Respiratory System</span>
+                                                            </div>
+                                        </div>
+                                        <script>
+                                                            const Digestive = document.getElementById("Digestive");
+                                                            const Respiratory = document.getElementById("Respiratory");
+                                                            const LogOut = document.getElementById("LogOut");
+
+
+                                                            Digestive.addEventListener("click", ()=>{
+                                                                                window.location.href="/VBI/DS11.html"
+                                                            })
+
+                                                            Respiratory.addEventListener("click", ()=>{
+                                                                                const CompleteDigestive = localStorage.getItem("DSSTATUS");
+
+                                                                                if(CompleteDigestive == "Done" ){
+                                                                                                    window.location.href = "/VBI/RS11.html"
+                                                                                }else{
+                                                                                                    document.getElementById("Error").textContent = "Sorry , in other to take this course, you must finish the digestive system course and reach a minimum of 70% Score to proceed";
+                                                                                }
+                                                            })
+
+                                                            LogOut.addEventListener("click", ()=>{
+                                                                                localStorage.clear("VBLLOGGED");
+                                                                                window.location.href = "/VBI/Index.html";
+                                                            })
+                                        </script>
+</body>
+</html>

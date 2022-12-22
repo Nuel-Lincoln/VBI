@@ -1,0 +1,311 @@
+body{
+                    margin: 0em;
+                    background-image: linear-gradient(to bottom right, gray, rgb(113, 98, 68), rgb(104, 104, 175));
+}
+
+.MainContainer{
+                    width: 100vw;
+                    min-height:100vh;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+}
+.Header{
+                    position: sticky;
+                    z-index: 1;
+                    top:0em;
+                    left:0em;
+                    width: 98%;
+                    height:2em;
+                    background-image: linear-gradient(to right, blue,rgb(183, 159, 115), gray);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding:1%;
+                    border-bottom: 1px solid black;
+                    font-weight: 800;
+                    font-size: 120%;
+}
+
+
+.HeaderFirst{
+                    width: 40%;
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-around;
+}
+.HeaderFirst img{
+                    width:30%;
+                    height: 2em;
+                    font-weight: 900;
+}
+
+.HeaderSecond{
+                    width: 40%;
+                    display:flex;
+                    align-items: center;
+                    gap:1em;
+                    /* justify-content: space-around; */
+}
+.HeaderSecond img{
+                    width: 10%;
+                    height: 2em;
+                    /* height: 5%; */
+                    border-radius: .5em;
+                    margin-left: 15%;
+                    border: 2px solid black;
+}
+
+.HeaderSecond .fa-solid{
+                    cursor: pointer;
+}
+
+.Btn{
+                    padding: 1%;
+                    border:1px solid gainsboro;
+                    font-weight: 600;
+                    border-radius: .1em;
+                    text-align:center;
+                    background-image: linear-gradient(to bottom right , blue, rgb(135, 135, 179), blue );
+                    cursor: pointer;
+                    text-decoration: none;
+                    color:black;
+}
+
+.Video{
+                    width: 100%;
+                    display: flex;
+                    height: fit-content;
+                    align-items: center;
+                    justify-content: center;
+}
+
+.Video video{
+                    height: 80vh;
+                    width: 100%;
+}
+
+.fa{
+                    color:wheat;
+                    background-color: black;
+                    position: absolute;
+                    z-index: 1;
+                    padding: 2%;
+                    top: 20%;
+                    left:0em;
+                    cursor: pointer;
+                    font-size: 150%;
+}
+
+.Text{
+                    display: flex;
+                    width: 70%;
+                    flex-direction: column;
+                    align-items:center;
+                    justify-content: center;
+                    gap:.5em;
+}
+.TextHeader{
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    height: 2em;
+                    border-bottom: 2px solid rgb(133, 123, 123);
+}
+
+.TextHeader div{
+                   cursor: pointer;
+                    height:100%;
+                    text-align:center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0% 1%;
+}
+
+.TextHeader div:hover{
+                   font-weight: 900;
+ }
+.MainText{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    background-image: linear-gradient(to bottom right, rgb(121, 121, 154),rgb(183, 159, 115), gray);
+                    align-items: center;
+                    padding: 5%;
+                    
+}
+.MainCourseContent{
+                    width:80%;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: .2em;
+}
+
+.Sections{
+                    display: flex;
+                    flex-direction: row;
+                    width: 70%;
+                    gap: 3em;
+                    border: 1px solid black;
+                    font-weight: 900;
+                    padding: 4% 1%;
+                    background-image: linear-gradient(to bottom right, blue,rgb(183, 159, 115), gray);
+                    cursor: pointer;
+                    align-items: center;
+                    justify-content: center;
+}
+.SubSection1{
+                    display: none;
+                    flex-direction: column;
+                    width: 50%;
+}
+.SubSections{
+                    display:flex;
+                    width:80%;
+                    padding: 1% 1%;
+                    gap: 3%;
+                    align-items:center;
+}
+
+.SubSections a{
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: black;
+}
+
+.SubSections a:hover{
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: rgb(245, 236, 236);
+}
+
+.SubSections a:active{
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: green;
+}
+
+.fa-square{
+                    border: 2px solid black;
+                    border-radius: .2em;
+                    font-size:100%;
+                    color: gainsboro;
+}
+
+.CourseOverview{
+                    width:80%;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: .2em;
+                    padding: 2%;
+}
+
+.Instructor{
+                    display:flex;
+                    flex-direction: column;
+                    gap:1em;
+                    width: 80%;
+}
+
+.Instructor img{
+                    width: 20%;
+                    border-radius:.5em;
+                    border: 2px solid black;
+}
+
+.LessonNote{
+                    width: 80%;
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    gap:2em;
+}
+
+.Buttons{
+                    width: 100%;
+                    display:flex;
+                    justify-content: space-between;
+                    align-items: center;
+}
+
+.EButtons{
+                    margin-top: 1em;
+                    width: 100%;
+                    padding: 2%;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+}
+.LessonEvaluation{
+                    width:80%;
+                    display:flex;
+                    flex-direction: column;
+                    gap:1em;
+                    align-items: center;
+}
+.MQuestions{
+                    display:flex;
+                    flex-direction: column;
+                    gap: 1em;
+                    width: 100%;
+}
+.Questions{
+                    width: 100%;
+                    height:fit-content;
+                    /* background-color: aqua; */
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: .5em;
+}
+
+.Quest{
+                    width: 100%;
+                    text-align: left;
+}
+.Option{
+                    width: 80%;
+                    text-align: left;
+                    cursor: pointer;
+                    padding: 1%;
+}
+.Correct{
+                    color: rgb(234, 229, 221);
+                    font-weight: 900;
+}
+.Option:hover{
+                   font-weight: 900;
+                   color: white;
+                   border: 1px solid white;
+}
+table{
+                    margin-top:2em;
+                     border: 2px solid black;
+                     text-align: center;
+                     padding: 2%;
+                     border-radius: .5em;
+                     width:60%;
+ }
+ td, th{
+                     border:1px solid black;
+                     padding: 1%;
+                     border-radius: .5em;
+ }
+ .Congrats{
+                    display:flex;
+                    flex-direction: column;
+                    gap: 1em;
+                    align-items: center;
+                   width: 80%;
+                   height:30%;
+                   border: 1px solid black;
+                   padding: 1%;
+ }
+ .Congrats img{
+                    width: 50%;
+                    height: 50%;
+ }
